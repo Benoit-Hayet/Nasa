@@ -20,7 +20,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.nasaservice.getImageOfTheDay()
       .subscribe((response) => {
-        this.apod = response.url;
+        this.apod = response;
       });
   }
 }
